@@ -1,0 +1,13 @@
+.container { 
+background: rgb(233, 193, 199);
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: start;
+flex-direction: column;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+}
