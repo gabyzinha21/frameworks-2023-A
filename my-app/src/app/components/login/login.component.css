@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+*{font-family: 'Edu NSW ACT Foundation', cursive;
+}
+    .container{
+ background: #9733FF;
+ height: 100vh;
+display: flex;
+justify-content: center;
+ align-items: center;
+
+ }
+
+ .login {
+ background: #FFF;
+ width: 450PX;
+ height: 450px;
+ box-shadow: 10px 10px 50px 10px rgb(205, 92, 228);
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ }
+
+ .input {
+    box-shadow: 10px 10px 10px 5px rgb(109, 73, 145);
+    width: 350px; 
+    height: 40px;
+    border-radius: 15px;
+    margin: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+ }
+
+ .input input {
+    width: 280px;
+    height: 30px;
+    font-size: 18px; 
+    border: none;
+    outline: none;
+    margin-left: 5px;
+ }
+
+
+ i {
+font-size: 30px;
+color: #9733FF;
+ }
+
+ .remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+ }
+
+ .remember > div {
+    display: flex;
+    gap: 5px;
+ }
+ h3 {
+    color: #999;
+    font-weight: 400;
+    color: #999;
+
+ }
+
+
+
+
+ h4 {
+    font-size: 14px;
+    font-size: 330;
+    color: #999;
+ }
+
+ button {
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient( 60deg, #a864e9, #603dcc);
+    box-shadow: 5px 5px 2px  #00000082;
+    border: 0;
+    color: #fff;
+
+ }
