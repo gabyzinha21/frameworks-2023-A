@@ -1,9 +1,35 @@
 <div class="container">
-    <div class="header">
+    <div class="login ">
+        <h2>sign in</h2>
 
-    <div>
-        <h1>DAY TO DAY</h1>
-        <br>
-        <H3>Calendario organizador de tarefas onde voce recebera uma 
-            notificaçao quando chegar no momento da sua tarefa.</H3>
+    <div  *ngIf ="isError" class="error">
+    <i class='bx bx-error'></i><span>User or password incorrect!</span>
     </div>
+
+        <div class="input">
+             <i class='bx bx-envelope-open'></i>
+            <input type="text" name="email" id="email" placeholder="E-mail">
+        </div>
+
+        <div class="input">
+              <i class='bx bx-lock-alt' ></i>
+            <input type="password" name="password" id="password" placeholder="password">    <i class='bx bx-low-vision' ></i>
+         </div>
+
+        <div class="remember">
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                <h4>Remember me</h4>
+            </div>
+            <h4>Forgot password?</h4>
+        </div>
+
+        <button (click)="login()"> SING IN</button>
+    <h3>DON'T HAVE AN ACCOUNT? CREATE</h3>
+    </div>
+    
+
+
+
+   
+</div>
