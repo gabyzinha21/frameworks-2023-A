@@ -1,116 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
-*{font-family: 'Edu NSW ACT Foundation', cursive;
+* {
+   font-family: 'Edu NSW ACT Foundation', cursive;
 }
-    .container{
- background: #9733FF;
- height: 100vh;
-display: flex;
-justify-content: center;
- align-items: center;
 
- }
+.container {
+   background: #9733FF;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
- .login {
- background: #FFF;
- width: 450PX;
- height: 450px;
- box-shadow: 10px 10px 50px 10px rgb(205, 92, 228);
- border-radius: 20px;
- display: flex;
- flex-direction: column;
- justify-content:center;
- align-items: center;
- }
+}
 
- .input {
-    box-shadow: 10px 10px 10px 5px rgb(109, 73, 145);
-    width: 350px; 
-    height: 40px;
-    border-radius: 15px;
-    margin: 20px;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
- }
+.login {
+   background: #FFF;
+   width: 450PX;
+   height: 450px;
+   box-shadow: 10px 10px 50px 10px rgb(205, 92, 228);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
- .input input {
-    width: 280px;
-    height: 30px;
-    font-size: 18px; 
-    border: none;
-    outline: none;
-    margin-left: 5px;
- }
+.input {
+   box-shadow: 10px 10px 10px 5px rgb(109, 73, 145);
+   width: 350px;
+   height: 40px;
+   border-radius: 15px;
+   margin: 20px;
+   padding-left: 15px;
+   display: flex;
+   align-items: center;
+}
 
-
- i {
-font-size: 30px;
-color: #9733FF;
- }
-
- .remember{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 370px;
- }
-
- .remember > div {
-    display: flex;
-    gap: 5px;
- }
- h3 {
-    color: #999;
-    font-weight: 400;
-    color: #999;
-
- }
+.input input {
+   width: 280px;
+   height: 30px;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   margin-left: 5px;
+}
 
 
+i {
+   font-size: 30px;
+   color: #cf33ff;
+}
+
+.remember {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 370px;
+}
+
+.remember>div {
+   display: flex;
+   gap: 5px;
+}
+
+h3 {
+   color: #999;
+   font-weight: 400;
+   color: #999;
+
+}
 
 
- h4 {
-    font-size: 14px;
-    font-size: 330;
-    color: #999;
- }
 
- button {
-    width: 200px;
-    height: 40px;
-    margin: 20px;
-    border-radius: 20px;
-    background: linear-gradient( 60deg, #a864e9, #603dcc);
-    box-shadow: 5px 5px 2px  #00000082;
-    border: 0;
-    color: #fff;
-    cursor: pointer;
 
- }
+h4 {
+   font-size: 14px;
+   font-size: 330;
+   color: #999;
+}
 
-   button:hover{
-filter: brightness(140%);
-   }
+button {
+   width: 200px;
+   height: 40px;
+   margin: 20px;
+   border-radius: 20px;
+   background: linear-gradient(60deg, #a864e9, #603dcc);
+   box-shadow: 5px 5px 2px #00000082;
+   border: 0;
+   color: #fff;
+   cursor: pointer;
 
-   .error {
-      border: 2px solid rgb(204, 49, 252);
-      margin-top: 5px;
-      width: 280px;
-      height: 40px;
-      background: rgb(213, 172, 231);
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-   }
-   
-   .error i {
-      margin-right: 5px;
-   }
+}
 
-   span {
-      color: rgb(7, 6, 6);
-      font-size: 20px;
-   }
- 
-  
+button:hover {
+   filter: brightness(140%);
+}
+
+.error {
+   border: 2px solid rgb(252, 49, 100);
+   margin-top: 5px;
+   width: 280px;
+   height: 40px;
+   background: rgba(193, 65, 56, 0.201);
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+}
+
+.correct {
+   border: 2px solid rgb(49, 252, 79);
+   margin-top: 5px;
+   width: 280px;
+   height: 40px;
+   background: rgb(172, 231, 180);
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+}
+
+.error i {
+   margin-right: 5px;
+   color: rgb(206, 32, 32);
+}
+
+span {
+   color: rgb(7, 6, 6);
+   font-size: 20px;
+}
+.correct i {
+   margin-right: 5px;
+   color: green;
+}

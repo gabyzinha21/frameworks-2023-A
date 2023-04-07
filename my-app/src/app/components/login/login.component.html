@@ -2,19 +2,24 @@
     <div class="login ">
         <h2>sign in</h2>
 
-    <div  *ngIf ="isError" class="error">
-    <i class='bx bx-error'></i><span>User or password incorrect!</span>
-    </div>
+        <div *ngIf="isError" class="error">
+            <i class='bx bx-error'></i><span>User or password incorrect!</span>
+        </div>
 
-        <div class="input">
-             <i class='bx bx-envelope-open'></i>
-            <input type="text" name="email" id="email" placeholder="E-mail">
+        <div *ngIf="isCorrect" class="correct">
+            <i class='bx bx-check'></i><span>  login correct!</span>
         </div>
 
         <div class="input">
-              <i class='bx bx-lock-alt' ></i>
-            <input type="password" name="password" id="password" placeholder="password">    <i class='bx bx-low-vision' ></i>
-         </div>
+            <i class='bx bx-envelope-open'></i>
+            <input type="text" name="email" id="email" placeholder="E-mail" [(ngModel)]="user">
+        </div>
+
+        <div class="input">
+            <i class='bx bx-lock-alt'></i>
+            <input type="password" name="password" id="password" placeholder="password" [(ngModel)]="pwd" /> <i
+                class='bx bx-low-vision'></i>
+        </div>
 
         <div class="remember">
             <div>
@@ -25,11 +30,12 @@
         </div>
 
         <button (click)="login()"> SING IN</button>
-    <h3>DON'T HAVE AN ACCOUNT? CREATE</h3>
+        <h3>DON'T HAVE AN ACCOUNT? CREATE</h3>
     </div>
-    
 
 
 
-   
+
+
+
 </div>
