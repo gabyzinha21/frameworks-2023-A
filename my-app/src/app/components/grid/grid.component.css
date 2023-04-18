@@ -1,0 +1,25 @@
+.container{
+    width: 80%;
+    height: 100vh;
+    background: rgb(212, 171, 178);
+    margin: 0 auto;
+    padding: 10px;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 80px;
+    gap: 10px;
+    
+}
+
+.item{
+    border: 1px solid tan;
+    background: rgb(36, 158, 158);
+}
+
+.item-1, .item-6 {
+    background: rgba(70, 132, 224, 0.418);
+    grid-column: 1/3;
+
+}
