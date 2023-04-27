@@ -7,26 +7,27 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   isError = false;
-
-  isCorrect = false;
+  isSuccess = false;
 
   user = ""
   pwd = ""
 
-  login (){
 
-      if(this.user == "gaby" && this.pwd == "gaby") {
-        this.isCorrect= true 
-        this.isError=false
-      }else{
+  login(){
+    this.isError = true;
 
-        this.isError = true;
-        this.isCorrect=false
-      }
+    if(this.user == "beto" && this.pwd == "beto"){
+      this.isSuccess = true;
+      this.isError = false;
+    } else {
+      this.isError = true;
+      this.isSuccess = false;
+    }
 
+    // user == "beto@beto.com" pwd="beto"
 
-    console.log("user = " + this.user + " Password ="  + this.pwd)
-
+    // console.log("User = " + this.user + " Password = " + this.pwd)
 
   }
+
 }

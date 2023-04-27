@@ -1,26 +1,29 @@
-.container { 
-background: rgb(226, 171, 228);
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+.container {
+  background: linear-gradient(45deg, #fff, rgb(153, 175, 255));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .calc {
-    display: flex;
-    justify-self: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calc input {
-    width: 25px;
-    min-height: 35px;
-    margin: 8px;
-    background: rgb(166, 228, 169);
+  width: 35px;
+  min-height: 30px;
+  margin: 8px;
+  outline: none;
+  background: #628fff;
+  font-size: 18px;
+
 }

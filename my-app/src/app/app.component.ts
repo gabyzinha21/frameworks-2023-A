@@ -7,17 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  nome = 'gaby';
-  count= 0; 
+  nome = 'Beto'
+  count = 0;
 
-
-  sub (){
+  sub(){
     this.count--;
-
   }
-  soma (){
+
+  soma(){
     this.count++;
-    
   }
 
 }
