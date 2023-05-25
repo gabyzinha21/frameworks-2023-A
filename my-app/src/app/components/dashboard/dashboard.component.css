@@ -16,8 +16,14 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+font-size:14px;
+font-weight: 600
+}
+
 h5 {
   font-size: 12px;
+  font-weight: 500;
 }
 
 * {
@@ -50,9 +56,10 @@ h5 {
 .profile .img {
   width: 80px;
   height: 80px;
-  background: #fa3;
+  background: rgb(230, 130, 218);
   border-radius: 50%;
 }
+
 
 .member {
   background: rgb(192, 196, 255);
@@ -65,6 +72,11 @@ h5 {
 .user-info .menu li {
   list-style: none;
   padding: 15px 20px;
+ 
+}
+li:hover{
+  opacity: 0.7;
+  background: rgba(240, 77, 202, 0.636);
 }
 
 .user-info .menu li i {
@@ -80,8 +92,8 @@ h5 {
 
 .content {
   display: grid;
-  grid-template-rows: 80px 200px 1fr;
-  padding: 30px;
+  grid-template-rows: 60px 150px 1fr;
+  padding: 0 20px;
 }
 
 .content .search {
@@ -148,9 +160,28 @@ h5 {
   margin-top: 30px;
 }
 
-.content .adm .team {
-  background: #e1deff;
+.content .adm .team .box {
+  display: grid;
+  background: #f8fafd;
+  margin: 10px 0;
+  border-radius: 8px;
+  grid-template-columns: 1fr 1fr;
 }
+
+.content .adm .team .box .member {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  margin: 0 15px 0 25px;
+  padding: 15px;
+  background: transparent;
+}
+
+.content .adm .team .box .member img {
+width: 40px;
+margin-right: 15px;
+}
+
 .content .adm .task {
   background: #deffe8;
 }
@@ -231,7 +262,7 @@ h5 {
 
 
 .container .user .item-3 .box {
-  background: #c4e7f3c7;  
+  background: #f3c4efc7;  
   height: 80%;
   width: 100%;
   border-radius: 8px;
@@ -255,19 +286,19 @@ h5 {
 }
 
 .container .user .item-3 .box .box-1 {
-border-radius: 2px solid #9a8eee;
+border-radius: 2px solid #9187e3;
 }
 
 .container .user .item-3 .box .box-1 .text {
-  color: #6957f8;
+  color: #9187e3;
 }
 
 .container .user .item-3 .box .box-2 .ball i {
-  color: #f47c4e;
+  color: #659bec;
 }
 
 .container .user .item-3 .box .box-2 {
-  color: #f47c4e;
+  color: #659bec;
 }
 
 .container .user .item-3 .box .box-1,
@@ -286,7 +317,7 @@ border-radius: 2px solid #9a8eee;
 }
 
 .container .user .item-4 .task-list {
-  background: #f47c4e;
+  background: #659bec;
   color: #fff;
   display: flex;
   align-items: center;
@@ -308,7 +339,7 @@ border-radius: 2px solid #9a8eee;
 }
 
 .container .user .item-4 .task-list:nth-child(3) {
-  background: #6758ef;
+  background: #9187e3;
 }
 
 .container .user .item-4 .recent-task {
@@ -337,3 +368,5 @@ border-radius: 2px solid #9a8eee;
   color: #6957f8;
   font-weight: 400;
 }
+
+
