@@ -7,8 +7,10 @@ import { HeroComponent } from './components/hero/hero.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { GridComponent } from './components/grid/grid.component';
-import { PageNotFoudComponent } from './components/page-not-foud/page-not-foud.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TaskComponent } from './components/task/task.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     HeroComponent,
     LoginComponent,
     GridComponent,
-    PageNotFoudComponent,
+    PageNotFoundComponent,
     DashboardComponent,
+    TaskComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
