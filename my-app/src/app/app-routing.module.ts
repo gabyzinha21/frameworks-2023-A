@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'hero', component: HeroComponent },
   { path: 'grid', component: GridComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'task', Component: TaskComponent },
+  { path: 'task', component: TaskComponent },
 
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },

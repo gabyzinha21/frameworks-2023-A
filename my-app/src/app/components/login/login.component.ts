@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,22 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  isError = false;
-  isSuccess = false;
+  constructor(private router:Router) {}
 
-  user = ""
-  pwd = ""
+  isError = false;
+  isCorrect = false;
+
+ 
+
+  user = "gaby"
+  pwd = "gaby"
 
 
   login(){
     this.isError = true;
 
-    if(this.user == "beto" && this.pwd == "beto"){
-      this.isSuccess = true;
+    if(this.user == "gaby" && this.pwd == "gaby"){
+      this.isCorrect = true;
       this.isError = false;
+      this.router.navigate (['/dashboard']);
     } else {
       this.isError = true;
-      this.isSuccess = false;
+      this.isCorrect = false;
     }
 
     // user == "beto@beto.com" pwd="beto"
