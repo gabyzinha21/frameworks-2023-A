@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="content">
+    <form action="formulário">
+      <h1>Formulário</h1>
+      <br />
+      <div>
+        <div class="form">
+          <label for="Escreva a task">Task:</label>
+          <input 
+          type="text" 
+          id="taskDesc" 
+          name="textnome" 
+          placeholder=" digite o nome da tarefa "
+          [formControl]="task" 
+          />
+
+          <label for="Descreva a task">Descrição:</label>
+          <input
+           type="text" 
+           id="textDsc" 
+           name="textnome" 
+           placeholder=" digite a descrição da tarefa"
+          [formControl]="descricao" />
+
+          <label for="Responsável">Responsável:</label>
+          <input
+           type="text"
+          id="textDesc"
+          name="textnome"  
+          placeholder=" digite o responsável da tarefa"
+          [formControl]="responsavel"  />
+
+          <label for="data">Data que inicia:</label>
+          <input 
+          type="date"
+          id="textDesc"
+          name="textnome" 
+          [formControl]="dt_inicio"  />
+
+          <label for="data">Data que Termina:</label>
+          <input 
+          type="date"
+          id="textDesc"
+          name="textnome" 
+          [formControl]="dt_fim"  />
+          
+        </div>
+        <div class="button-2">
+          <div class="button">
+            <button type="submit">Cancelar</button>
+          </div>
+          <div class="button">
+            
+            <button (click)= "addtask()" type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
