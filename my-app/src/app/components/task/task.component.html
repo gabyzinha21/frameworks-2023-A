@@ -11,7 +11,7 @@
           id="taskDesc" 
           name="textnome" 
           placeholder=" digite o nome da tarefa "
-          [formControl]="task" 
+          [formControl]="nome" 
           />
 
           <label for="Descreva a task">Descrição:</label>
@@ -20,7 +20,7 @@
            id="textDsc" 
            name="textnome" 
            placeholder=" digite a descrição da tarefa"
-          [formControl]="task" />
+          [formControl]="descricao" />
 
           <label for="Responsável">Responsável:</label>
           <input
@@ -28,21 +28,21 @@
           id="textDesc"
           name="textnome"  
           placeholder=" digite o responsável da tarefa"
-          [formControl]="task"  />
+          [formControl]="responsavel"  />
 
           <label for="data">Data que inicia:</label>
           <input 
           type="date"
           id="textDesc"
           name="textnome" 
-          [formControl]="task"  />
+          [formControl]="dt_inicio"  />
 
           <label for="data">Data que Termina:</label>
           <input 
           type="date"
           id="textDesc"
           name="textnome" 
-          [formControl]="task"  />
+          [formControl]="dt_fim"  />
           
         </div>
         <div class="button-2">
